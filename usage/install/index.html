@@ -8,7 +8,7 @@
     
     
     
-    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
     <title>Setup - DataJoint Elements</title>
@@ -19,15 +19,16 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
     <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../css/base.min.css" rel="stylesheet">
-    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
 
     
         
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
         
     
+    <link href="../../extra.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,7 +60,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href="..">DataJoint Elements</a>
+              <a class="navbar-brand" href="../..">DataJoint Elements</a>
             
         </div>
 
@@ -70,7 +71,13 @@
                 
                 
                     <li >
-                        <a href="..">About</a>
+                        <a href="../../publications/">Publications</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../projects/">Projects</a>
                     </li>
                 
                 
@@ -109,24 +116,93 @@
                 
                 
                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Element Descriptions <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../description/lab/">Lab</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/animal/">Animal</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/session/">Session</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/event/">Event</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/array_ephys/">Array Electrophysiology</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/electrode_localization/">Electrode localization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/calcium_imaging/">Calcium Imaging</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/miniscope/">Miniscope</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/deeplabcut/">Deeplabcut</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../description/facemap/">Facemap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../community/publications/">Publications</a>
+    <a href="../../community/contribute/">Contribution Guidelines</a>
 </li>
 
                         
                             
 <li >
-    <a href="../community/projects/">Projects</a>
+    <a href="../../community/nwb/">NWB</a>
 </li>
 
                         
                             
 <li >
-    <a href="../community/contribute/">Contribution Guideline</a>
+    <a href="../../community/support/">Support</a>
 </li>
 
                         
@@ -141,53 +217,47 @@
                         
                             
 <li >
-    <a href="../management/plan/">Management Plan</a>
+    <a href="../../management/plan/">Management Plan</a>
 </li>
 
                         
                             
 <li >
-    <a href="../management/team/">Team</a>
+    <a href="../../management/team/">Team</a>
 </li>
 
                         
                             
 <li >
-    <a href="../management/governance/">Project Governance</a>
+    <a href="../../management/governance/">Project Governance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../management/selection/">Project Selection Process</a>
+    <a href="../../management/selection/">Project Selection Process</a>
 </li>
 
                         
                             
 <li >
-    <a href="../management/quality-assurance/">Quality Assurance</a>
+    <a href="../../management/quality-assurance/">Quality Assurance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../management/outreach/">Outreach Plan</a>
+    <a href="../../management/outreach/">Outreach Plan</a>
 </li>
 
                         
                             
 <li >
-    <a href="../management/licenses/">Licenses and User Agreements</a>
+    <a href="../../management/licenses/">Licenses and User Agreements</a>
 </li>
 
                         
                         </ul>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../support/">Support</a>
                     </li>
                 
                 
@@ -270,7 +340,7 @@
   instructions.</li>
 </ul>
 <h2 id="system-architecture">System architecture</h2>
-<p><img alt="Architecture" src="../img/install_architecture.png" /></p>
+<p><img alt="Architecture" src="../../img/install_architecture.png" /></p>
 <ul>
 <li>The above diagram describes the general components for a local DataJoint
   development environment.</li>
@@ -332,34 +402,41 @@
   environment to run the workflow.</li>
 </ul>
 <ul>
-<li>Conda and virtualenv are virtual environment managers and you can use either
-  option. Below you will find instructions for conda.<pre><code>+ Miniconda is a minimal installer for conda.  Follow the [installer instructions](
-    https://conda.io/en/latest/miniconda.html) for your operating system.
-
-+ You may need to add the Miniconda directory to the PATH environment
-    variable
-
-    + First locate the Miniconda directory
-
-    + Then modify and run the following command
-        ```bash
-        export PATH="&lt;absolute-path-to-miniconda-directory&gt;/bin:$PATH"
-        ```
-+ Create a new conda environment
-    ```bash
-    conda create -n &lt;environment_name&gt; python=&lt;version&gt;
-    ```
-
-    + Example command to create a conda environment
-        ```bash
-        conda create -n workflow-array-ephys python=3.8.11
-        ```
-
-+ Activate the conda environment
-    ```bash
-    conda activate &lt;environment_name&gt;
-    ```
-</code></pre>
+<li>
+<p>Conda and virtualenv are virtual environment managers and you can use either
+  option. Below you will find instructions for conda.</p>
+<ul>
+<li>Miniconda is a minimal installer for conda.  Follow the <a href="https://conda.io/en/latest/miniconda.html">installer instructions</a> for your operating system.</li>
+</ul>
+<ul>
+<li>
+<p>You may need to add the Miniconda directory to the PATH environment
+    variable</p>
+<ul>
+<li>First locate the Miniconda directory</li>
+</ul>
+<ul>
+<li>Then modify and run the following command
+    <code>bash
+    export PATH="&lt;absolute-path-to-miniconda-directory&gt;/bin:$PATH"</code><ul>
+<li>Create a new conda environment
+<code>bash
+conda create -n &lt;environment_name&gt; python=&lt;version&gt;</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Example command to create a conda environment
+  <code>bash
+  conda create -n workflow-array-ephys python=3.8.11</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Activate the conda environment
+    <code>bash
+    conda activate &lt;environment_name&gt;</code></li>
+</ul>
 </li>
 </ul>
 <h2 id="install-jupyter-notebook-packages">Install Jupyter Notebook packages</h2>
@@ -509,57 +586,53 @@ pip install "element-interface[caiman] @ git+https://github.com/datajoint/elemen
 <li>Specific workflows will require additional information in the custom field, including
   paths to data directories, following the convention described in the
   <a href="#directory-structure-and-file-naming-convention">directory structure section</a>. If
-  multiple root directories exist, include all in the relevant json array.<pre><code>+ `workflow-array-ephys`
-    &lt;details&gt;
-    &lt;summary&gt;Click to expand&lt;/summary&gt;
-
-    ```json
-    "custom": {
-        "database.prefix": "&lt;username_&gt;",
-        "ephys_root_data_dir": ["Full path to root directory of raw data",
-                                "Full path to root directory of processed data"]
-        }
-    ```
-    &lt;/details&gt;
-
-+ `workflow-calcium-imaging`
-    &lt;details&gt;
-    &lt;summary&gt;Click to expand&lt;/summary&gt;
-
-    ```json
-    "custom": {
-        "database.prefix": "&lt;username_&gt;",
-        "imaging_root_data_dir": ["Full path to root directory of raw data",
-                                  "Full path to root directory of processed data"]
-        }
-    ```
-    &lt;/details&gt;
-
-+ `workflow-trial`
-    &lt;details&gt;
-    &lt;summary&gt;Click to expand&lt;/summary&gt;
-
-    ```json
-    "custom": {
-        "database.prefix": "&lt;username_&gt;",
-        "trial_root_data_dir": ["Full path to root directory of raw data",
-                                "Full path to root directory of processed data"]
-        }
-    ```
-    &lt;/details&gt;
-
-+ `workflow-deeplabcut`
-    &lt;details&gt;
-    &lt;summary&gt;Click to expand&lt;/summary&gt;
-
-    ```json
-    "custom": {
-        "database.prefix": "&lt;username_&gt;",
-        "beh_root_data_dir": ["Full path to root directory of raw data",
+  multiple root directories exist, include all in the relevant json array.<p>+ <code>workflow-array-ephys</code>
+      <details>
+      <summary>Click to expand</summary></p>
+<pre><code>  ```json
+  "custom": {
+      "database.prefix": "&lt;username_&gt;",
+      "ephys_root_data_dir": ["Full path to root directory of raw data",
                               "Full path to root directory of processed data"]
-        }
-    ```
-    &lt;/details&gt;
+      }
+  ```
+  &lt;/details&gt;
+</code></pre>
+<p>+ <code>workflow-calcium-imaging</code>
+      <details>
+      <summary>Click to expand</summary></p>
+<pre><code>  ```json
+  "custom": {
+      "database.prefix": "&lt;username_&gt;",
+      "imaging_root_data_dir": ["Full path to root directory of raw data",
+                                "Full path to root directory of processed data"]
+      }
+  ```
+  &lt;/details&gt;
+</code></pre>
+<p>+ <code>workflow-miniscope</code>
+      <details>
+      <summary>Click to expand</summary></p>
+<pre><code>  ```json
+  "custom": {
+      "database.prefix": "&lt;username_&gt;",
+      "miniscope_root_data_dir": ["Full path to root directory of raw data",
+                                  "Full path to root directory of processed data"]
+      }
+  ```
+  &lt;/details&gt;
+</code></pre>
+<p>+ <code>workflow-deeplabcut</code>
+      <details>
+      <summary>Click to expand</summary></p>
+<pre><code>  ```json
+  "custom": {
+      "database.prefix": "&lt;username_&gt;",
+      "dlc_root_data_dir": ["Full path to root directory of raw data",
+                            "Full path to root directory of processed data"]
+      }
+  ```
+  &lt;/details&gt;
 </code></pre>
 </li>
 </ul>
@@ -827,38 +900,33 @@ from &lt;relevant-workflow&gt;.pipeline import *</code></p>
 </li>
 </ul>
 <ul>
-<li>
-<p>View the declared tables</p>
-<ul>
-<li>
-<p><code>workflow-array-ephys</code>
-    <details>
-    <summary>Click to expand details</summary></p>
-<p><code>python
-subject.Subject()
-session.Session()
-ephys.ProbeInsertion()
-ephys.EphysRecording()
-ephys.Clustering()
-ephys.Clustering.Unit()</code></p>
+<li>View the declared tables<p>- <code>workflow-array-ephys</code>
+      <details>
+      <summary>Click to expand details</summary></p>
+<pre><code>  ```python
+  subject.Subject()
+  session.Session()
+  ephys.ProbeInsertion()
+  ephys.EphysRecording()
+  ephys.Clustering()
+  ephys.Clustering.Unit()
+  ```
+</code></pre>
 </details>
-</li>
-</ul>
-<ul>
-<li>
-<p><code>workflow-calcium-imaging</code>
-    <details>
-    <summary>Click to expand details</summary></p>
-<p><code>python
-subject.Subject()
-session.Session()
-scan.Scan()
-scan.ScanInfo()
-imaging.ProcessingParamSet()
-imaging.ProcessingTask()</code></p>
-</details>
-</li>
-</ul>
+<p>- <code>workflow-calcium-imaging</code>
+      <details>
+      <summary>Click to expand details</summary></p>
+<pre><code>  ```python
+  subject.Subject()
+  session.Session()
+  scan.Scan()
+  scan.ScanInfo()
+  imaging.ProcessingParamSet()
+  imaging.ProcessingTask()
+  ```
+
+  &lt;/details&gt;
+</code></pre>
 </li>
 </ul>
 <ul>
@@ -866,7 +934,6 @@ imaging.ProcessingTask()</code></p>
   please refer to the following workflow specific Jupyter notebooks. + <code>workflow-array-ephys</code> <a href="https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks">Jupyter notebooks</a> + <code>workflow-calcium-imaging</code> <a href="https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks">Jupyter notebooks</a></li>
 </ul>
 <h2 id="datajoint-labbook">DataJoint LabBook</h2>
-<p><img alt="LabBook GIF" src="https://github.com/datajoint/datajoint-labbook/blob/master/docs/sphinx/_static/images/walkthroughDemoOptimized.gif?raw=true" /></p>
 <ul>
 <li>DataJoint LabBook is a graphical user interface to facilitate working with
   DataJoint tables.</li>
@@ -960,37 +1027,44 @@ pip install -e ./workflow-calcium-imaging</code></p>
   <code>workflow</code>.</li>
 </ul>
 <ul>
-<li>
-<p><code>workflow-array-ephys</code>
+<li><code>workflow-array-ephys</code>
     <details>
-    <summary>Click to expand details</summary></p>
-<p>```
+    <summary>Click to expand details</summary><p>```
   from workflow_array_ephys.pipeline import *</p>
 <p>ephys.schema.drop()
-probe.schema.drop()
-session.schema.drop()
-subject.schema.drop()
-lab.schema.drop()</p>
-<p>```</p>
+  probe.schema.drop()
+  session.schema.drop()
+  subject.schema.drop()
+  lab.schema.drop()
+  ```</p>
 </details>
-<p>```</p>
 </li>
 </ul>
 <ul>
-<li>
-<p><code>workflow-calcium-imaging</code>
+<li><code>workflow-calcium-imaging</code>
     <details>
-    <summary>Click to expand details</summary></p>
-<p>```
+    <summary>Click to expand details</summary><p>```
   from workflow_calcium_imaging.pipeline import *</p>
 <p>imaging.schema.drop()
-scan.schema.drop()
-session.schema.drop()
-subject.schema.drop()
-lab.schema.drop()</p>
-<p>```</p>
-<p></details>
-```</p>
+  scan.schema.drop()
+  session.schema.drop()
+  subject.schema.drop()
+  lab.schema.drop()
+  ```</p>
+</details>
+</li>
+</ul>
+<ul>
+<li><code>workflow-miniscope</code>
+    <details>
+    <summary>Click to expand details</summary><p>```
+  from workflow_miniscope.pipeline import *</p>
+<p>miniscope.schema.drop()
+  session.schema.drop()
+  subject.schema.drop()
+  lab.schema.drop()
+  ```</p>
+</details>
 </li>
 </ul>
 <h3 id="run-integration-tests">Run integration tests</h3>
@@ -999,8 +1073,8 @@ lab.schema.drop()</p>
   dataset is saved (e.g. <code>/tmp/testset</code>).</li>
 </ul>
 <ul>
-<li>Create an <code>.env</code> file with the following content. Replace <code>/tmp/testset</code>
-  with the directory where you have the test dataset downloaded.
+<li>Create an <code>.env</code> file within the <code>docker</code> directory with the following content. 
+  Replace <code>/tmp/testset</code> with the directory where you have the test dataset downloaded.
   <code>TEST_DATA_DIR=/tmp/testset</code></li>
 </ul>
 <ul>
@@ -1013,7 +1087,7 @@ lab.schema.drop()</p>
 </ul>
 <ul>
 <li>Run the Docker container.
-  <code>docker-compose -f docker-compose-test.yaml up --build</code></li>
+  <code>docker-compose -f ./docker/docker-compose-test.yaml up --build</code></li>
 </ul></div>
         
         
@@ -1031,7 +1105,7 @@ lab.schema.drop()</p>
       </footer>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
 
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
@@ -1039,10 +1113,10 @@ lab.schema.drop()</p>
     <script>hljs.initHighlightingOnLoad();</script>
     
 
-    <script>var base_url = ".."</script>
+    <script>var base_url = "../.."</script>
     
-    <script src="../js/base.js"></script>
-    <script src="../search/main.js"></script>
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
